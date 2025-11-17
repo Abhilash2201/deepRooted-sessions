@@ -1,0 +1,54 @@
+/* h6 {
+  background-color: blueviolet;
+} */
+
+/* * {
+  background-color: pink;
+} */
+
+/* #first-H6 {
+  background-color: brown;
+} */
+
+/* #second-H6 {
+  background-color: coral;
+} */
+
+/* .h6-headings {
+  background-color: aqua !important;
+}
+ */
+/* p,
+#FIRST-H6,
+div {
+  background-color: rgb(9, 24, 9);
+} */
+
+/* <!-- Descendeant selector --> */
+
+/* div {
+  background-color: lightgray;
+}
+div p {
+  font-weight: 700;
+}
+div p span {
+  color: red;
+} */
+
+/* div p {
+  background-color: lightgray;
+}
+
+div > p {
+  background-color: lightgreen;
+} */
+
+div > p {
+  color: brown;
+  font-size: larger;
+}
+div + p {
+  color: rgb(39, 86, 86);
+  font-size: xx-large;
+}
