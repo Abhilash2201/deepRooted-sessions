@@ -133,8 +133,105 @@
 // const response = confirm("are u eng graduate");
 // console.log(response);
 
-const num1 = prompt("enter ur first name");
-const num2 = prompt("enter ur second name");
-const res = num1 + num2;
-// console.log(num1);
-alert("the sum of" + num1 + " " + num2 + " = ");
+// const num1 = parseInt(prompt("enter ur first num"));
+// const num2 = Number(prompt("enter ur second num"));
+// const res = num1 + num2;
+// console.log(res);
+
+// console.log(typeof num1);
+// console.log(typeof num2);
+
+// "abc"+"def"
+// "abcdef"
+// "10"+"10"
+// 10+10
+// typecasting converting data from one type to another type
+// const res = num1 + num2;
+// // console.log(num1);
+// alert("the sum of" + num1 + " " + num2 + " = " + res);
+
+// const a = Number("18");
+// console.log(a);
+// console.log(typeof a);
+
+// const b = Number("abhi");
+// console.log(b);
+// console.log(typeof b);
+
+// console.log(NaN + 1);
+
+// let a = "hi";
+// let b = "hello";
+// let c = `hey`;
+// let d = String("gm");
+// // let d = String("gm");
+// // let e = "10";
+// console.log(a + b);
+// console.log("a+b");
+
+// let a = "'hi'";
+// let b = '"hello"';
+// let c = "`hey`";//es6
+// let d = String("gm");
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// let a = 10;
+// let b = 20;
+// BODMAS
+// console.log("the sum of " + a + " + " + b + "= " + a + b);
+// console.log("the sum of " + a + " + " + b + "= " + (a + b));
+
+// console.log(`the sum
+//      of ${a} + ${b} + ${a + b}`);
+
+// console.error("i am a error");
+// console.warn("i am a warn");
+
+let msg = "Deep Rooted";
+let index = "012345678910";
+
+console.log(msg);
+// console.log(msg.length);
+// console.log(msg.toUpperCase());
+// console.log(msg.toLowerCase());
+// console.log(msg.charAt(0));
+// console.log(msg.charAt(10));
+
+// console.log(msg[0]);
+// console.log(msg[1]);
+// console.log(msg[2]);
+// console.log(msg[3]);
+
+// looping
+// know range/iteration---for
+// not know range/iteration based on some condition --- while
+// do while
+
+//  i++//post increment
+
+// for (let i = 0; i < 4; i = i + 1) {
+//   console.log(i);
+//   console.log(msg.charAt(i));
+// }
+// let ans = "";
+
+// for (let i = 0; i < 4; i = i + 1) {
+//   ans = ans + msg[i];
+//   //     D  = "" + D;//0
+//   //     De  = "D" + e;//1
+//   //     Dee  = "De" + e;//2
+//   //     Deep  = "Dee" + p;//3
+// }
+// console.log(ans);
+// let a = "1 3";
+// console.log(a.length);
+
+// console.log("ab" === " ab");
+// console.log("ab" === "ab");
+
+console.log(msg.charCodeAt(0));
+let num = 4;
+// convert numn to binary
