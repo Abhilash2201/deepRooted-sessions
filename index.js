@@ -190,10 +190,10 @@
 // console.error("i am a error");
 // console.warn("i am a warn");
 
-let msg = "Deep Rooted";
-let index = "012345678910";
+// let msg = "Deep Rooted";
 
-console.log(msg);
+// console.log(msg);
+// console.log(msg[11]);
 // console.log(msg.length);
 // console.log(msg.toUpperCase());
 // console.log(msg.toLowerCase());
@@ -232,6 +232,59 @@ console.log(msg);
 // console.log("ab" === " ab");
 // console.log("ab" === "ab");
 
-console.log(msg.charCodeAt(0));
-let num = 4;
+// console.log(msg.charCodeAt(0));
+// let num = 4;
 // convert numn to binary
+
+// let msg = "Deep Rooted";
+
+// let num = 4;
+// let binary = num.toString(6
+// );
+
+// console.log(binary);
+
+// let num = 4;
+// let base = 2;
+// let binary = 0;
+
+// console.log(num % 2);
+// console.log(num / 2);
+
+// while (parseInt(num / base)) {}
+
+// let msg = "Deep Rooted";
+// let add = "axx-e1224";
+
+// let email = "depeRoot@gmail.come";
+// console.log(msg.charCodeAt(1));
+
+// console.log(add + msg);
+// console.log(add.concat(msg));
+// console.log(email.endsWith(".com"));
+// console.log(email.endsWith(".net"));
+
+// console.log(add.startsWith("axx"));
+// console.log(email.includes("Root"));
+// console.log(email.includes("Root1"));
+
+// console.log(email.indexOf("R"));
+// console.log(email.indexOf("e"));
+// console.log(email.indexOf("e", 2));
+// console.log(email.lastIndexOf("e"));
+let msg = "hi gm anujna";
+// console.log(msg.padEnd(40, "hello"));
+// console.log(msg.padStart(40, "hello"));
+console.log(msg.repeat(5));
+// console.log(msg.replace("anujna", "abhilash"));
+// console.log(msg.replaceAll("a", "b"));
+
+// console.log(msg.slice(3));
+// console.log(msg.slice(3, 5));
+// console.log(msg.);
+console.log(msg + msg);
+let ans = "";
+for (let i = 0; i < 50; i++) {
+  ans = ans + msg;
+}
+console.log(ans);
