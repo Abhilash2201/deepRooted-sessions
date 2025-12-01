@@ -272,19 +272,90 @@
 // console.log(email.indexOf("e"));
 // console.log(email.indexOf("e", 2));
 // console.log(email.lastIndexOf("e"));
-let msg = "hi gm anujna";
+// let msg = "hi gm anujna";
 // console.log(msg.padEnd(40, "hello"));
 // console.log(msg.padStart(40, "hello"));
-console.log(msg.repeat(5));
+// console.log(msg.repeat(5));
 // console.log(msg.replace("anujna", "abhilash"));
 // console.log(msg.replaceAll("a", "b"));
 
 // console.log(msg.slice(3));
 // console.log(msg.slice(3, 5));
 // console.log(msg.);
-console.log(msg + msg);
-let ans = "";
-for (let i = 0; i < 50; i++) {
-  ans = ans + msg;
+// console.log(msg + msg);
+// let ans = "";
+// for (let i = 0; i < 50; i++) {
+//   ans = ans + msg;
+// }
+// console.log(ans);
+
+// console.log(4 + 4);
+
+// 5*1=5
+
+// 5*2=10
+
+// 5*10=50
+// operation = two operannds with one opertaor
+// muliplication=5 ,i *
+
+// let table = 10;
+// for (let i = 1; i < 11; i++) {
+//   console.log(table + " * " + i + " = " + table * i);
+// }
+
+// let table = 10;
+// for (let i = 1; i < 11; i++) {
+//   console.log(table + " * " + i + " = " + table * i);
+// }
+
+// let table1 = 5;
+// for (let i = 1; i < 11; i++) {
+//   console.log(table1 + " * " + i + " = " + table1 * i);
+// }
+
+// let table2 = 12;
+// for (let i = 1; i < 11; i++) {
+//   console.log(table2 + " * " + i + " = " + table2 * i);
+// }
+
+// odd no
+
+// let num = 5;
+// if (num % 2 === 0) {
+//   console.log(num + " is a even num");
+// } else {
+//   console.log(num + " is a odd num");
+// }
+
+// function
+// it is a block of code which is used to perform some specific task or operation which will be executed only whenever it is invoked or called
+// code resuability avoiding coding rewriting
+// code readability
+// fnc can accept the parameters
+
+// parametrs
+function tableFnc(a) {
+  let table1 = a;
+  for (let i = 1; i < 11; i++) {
+    console.log(table1 + " * " + i + " = " + table1 * i);
+  }
 }
-console.log(ans);
+
+// fncName()
+// function with parameter
+// tableFnc(5); //arguments
+tableFnc(7);
+tables
+
+check num is odd or even
+calculate the square of num 
+calculate the cube of num 
+calculate the squareroot of num 
+calculate the cuberoot of num 
+calculate the lcm of num 
+calculate the hcf of num 
+calculate the happy  num 
+calculate the armstrong 
+calculate the dissarium 
+calculate the dissarium 
