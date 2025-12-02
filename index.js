@@ -273,6 +273,10 @@
 // console.log(email.indexOf("e", 2));
 // console.log(email.lastIndexOf("e"));
 // let msg = "hi gm anujna";
+
+// console.log(msg);
+// console.log(msg.split(" "));
+
 // console.log(msg.padEnd(40, "hello"));
 // console.log(msg.padStart(40, "hello"));
 // console.log(msg.repeat(5));
@@ -333,29 +337,122 @@
 // code resuability avoiding coding rewriting
 // code readability
 // fnc can accept the parameters
+// fnc can return the value
+// default return value is undefined
 
 // parametrs
-function tableFnc(a) {
-  let table1 = a;
-  for (let i = 1; i < 11; i++) {
-    console.log(table1 + " * " + i + " = " + table1 * i);
-  }
-}
+// function tableFnc(a) {
+//   let table1 = a;
+//   for (let i = 1; i < 11; i++) {
+//     console.log(table1 + " * " + i + " = " + table1 * i);
+//   }
+// }
 
 // fncName()
 // function with parameter
 // tableFnc(5); //arguments
-tableFnc(7);
-tables
 
-check num is odd or even
-calculate the square of num 
-calculate the cube of num 
-calculate the squareroot of num 
-calculate the cuberoot of num 
-calculate the lcm of num 
-calculate the hcf of num 
-calculate the happy  num 
-calculate the armstrong 
-calculate the dissarium 
-calculate the dissarium 
+// tableFnc(7);
+// tables
+
+// check num is odd or even
+// calculate the square of num
+// calculate the cube of num
+// calculate the squareroot of num
+// calculate the cuberoot of num
+// calculate the lcm of num
+// calculate the hcf of num
+// calculate the happy  num
+// calculate the armstrong
+// calculate the dissarium
+// calculate the prime num
+// calculate the palindrome nu
+// calculate the factorial num
+// calculate the fibbonaci series
+
+// types of function
+// 1. fnc without parameter and without return type
+// 2. fnc with parameter and without return type
+// 3. fnc without parameter and with return type
+// 4. fnc with parameter and with return type
+//  Nested function
+
+function isEven(num) {
+  if (num % 2 === 0) {
+    // console.log(num + " is even num");
+    return true;
+  }
+}
+// isEven(9);
+// isEven(10);
+// console.log(isEven);
+// console.log(isEven(7));
+
+// if (isEven(8)) {
+//   console.log(8 + 10);
+// }
+
+// function square(num = 1) {
+//   return num * num;
+// }
+// console.log(square(3));
+// console.log(square());
+
+// function happyNum(num) {
+//   const [num1, num2] = num.toString().split("");
+//   const sum = square(parseInt(num1)) + square(parseInt(num2));
+
+//   while (sum !== 1 || sum !== 4) {
+//     happyNum(sum);
+//   }
+//   return "num is a happy num";
+// }
+
+// happyNum(10);
+
+// types of function
+// 1.named function
+// 2.anonymous function
+// firstclass function
+// function with expression
+// IIFE -immediately invoked function expression
+// 4.arrow function
+// 5.nested function
+// 6.HOF -higher order function
+//  7.callback function
+
+function factorial(num) {
+  return 10;
+  console.log("i am a factorila");
+  return undefined;
+}
+console.log(factorial(4));
+
+// const demo=2;
+// const test = function () {
+//   console.log(" i a anonymous");
+// };
+
+// const res=2+4
+
+// const res = (function () {
+//   console.log("i ma  a IIFE");
+//   return 10;
+// })();
+// console.log(res);
+// console.log(res);
+// console.log(res);
+
+// arrow function es6
+const add = (a) => {
+  a + 10;
+
+console.log("hi");
+
+console.log(add(5)); //15
+// fnction keyword is ommited
+// curly braces can be ommited if we have only one statement
+// it will have implicit return when we omit curly braces 
+// we can omit the parenthesis when we have only one parameter
+
+// fnc calling syntxa=fncName+()
