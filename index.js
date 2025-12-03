@@ -421,12 +421,12 @@ function isEven(num) {
 // 6.HOF -higher order function
 //  7.callback function
 
-function factorial(num) {
-  return 10;
-  console.log("i am a factorila");
-  return undefined;
-}
-console.log(factorial(4));
+// function factorial(num) {
+//   return 10;
+//   console.log("i am a factorila");
+//   return undefined;
+// }
+// console.log(factorial(4));
 
 // const demo=2;
 // const test = function () {
@@ -444,15 +444,93 @@ console.log(factorial(4));
 // console.log(res);
 
 // arrow function es6
-const add = (a) => {
-  a + 10;
+// const add = (a) => {
+//   a + 10;
+// };
+// console.log("hi");
 
-console.log("hi");
-
-console.log(add(5)); //15
+// console.log(add(5)); //15
 // fnction keyword is ommited
 // curly braces can be ommited if we have only one statement
-// it will have implicit return when we omit curly braces 
+// it will have implicit return when we omit curly braces
 // we can omit the parenthesis when we have only one parameter
+//  arrow functions do not bind their own this keyword;
+//  instead, they inherit the this value from their immediately surrounding (lexical) scope at the time they are defined.
 
 // fnc calling syntxa=fncName+()
+
+// console.log(this);
+
+// window.alert("hi");
+
+// this.prompt("enter ur name");
+
+// // scopes
+
+// var a = 10;
+
+// function demo() {
+//   let a = 11;
+//   console.log(a);
+//   console.log(this);
+//   console.log(this.a);
+// }
+// demo();
+
+// function outer() {
+//   console.log("i am a outer");
+//   function inner() {
+//     console.log(" i am a inner");
+//   }
+//   inner();
+// }
+
+// function declaration
+// function utilization
+
+// // HOF
+// function test(num, fnc, msg) {
+//   if (fnc(num)) {
+//     console.log(num + " is a " + msg);
+//   }
+// }
+
+// function isEven(num) {
+//   return num % 2 === 0;
+// } //Callback function
+
+// function isOdd(num) {
+//   return num % 2 !== 0;
+// } //pure function
+
+// test(10, isEven, "even");
+// test(11, isOdd, "odd")
+//
+
+function hra(basic, percent) {}
+function da(basic, percent) {}
+function ta(basic, percent) {}
+
+function salary(basic, fnc) {}
+
+salary(1000, hra);
+
+company;
+// emple-
+//        snr
+//        jnr
+//        intern
+
+function snrSal(basci) {
+  function hra() {}
+  function ta() {}
+  function da() {}
+  function pf() {}
+}
+
+function jnrSal(basci) {
+  function hra() {}
+  function ta() {}
+  function da() {}
+  function pf() {}
+}
