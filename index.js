@@ -507,30 +507,114 @@ function isEven(num) {
 // test(11, isOdd, "odd")
 //
 
-function hra(basic, percent) {}
-function da(basic, percent) {}
-function ta(basic, percent) {}
+// function hra(basic, percent) {}
+// function da(basic, percent) {}
+// function ta(basic, percent) {}
 
-function salary(basic, fnc) {}
+// function salary(basic, fnc) {}
 
-salary(1000, hra);
+// salary(1000, hra);
 
-company;
+// company;
 // emple-
 //        snr
 //        jnr
 //        intern
 
-function snrSal(basci) {
-  function hra() {}
-  function ta() {}
-  function da() {}
-  function pf() {}
+// function snrSal(basci) {
+//   function hra() {}
+//   function ta() {}
+//   function da() {}
+//   function pf() {}
+// }
+
+// function jnrSal(basci) {
+//   function hra() {}
+//   function ta() {}
+//   function da() {}
+//   function pf() {}
+// }
+
+// demo(); //named fnc hoisting true
+
+function demo() {
+  console.log("hi");
+  // return pdt to nptd
 }
 
-function jnrSal(basci) {
-  function hra() {}
-  function ta() {}
-  function da() {}
-  function pf() {}
+// console.log(demo);
+
+// demo();
+
+// test();
+// const test = function () {
+//   console.log("i am a anonymous");
+// };
+// test();
+
+// namedFnc();
+// anonymous
+// firsct class function
+// functio Expression
+// iifee
+// nested function
+// HOF
+// callback function
+// arrow function
+
+// js is a dyanamically typed lang
+
+// Array
+// it is a collection of similar data types which is stored in a single variable name with an index value
+
+// it is a collection of data types
+// which is  used to store the collection of value in a single variable name based on index value
+// the value can be homogeneous or heterogeneous
+// the value can be accessed based on index value
+// the index value starts from 0 to n-1 (n=length of the array)
+
+const stdName = "anujna";
+const stdqulification = "BE";
+const courseEnrolled = "Mern";
+const phone = 1234567890;
+
+// const skill = "html";
+// const skill1 = "css";
+// const skill2 = "js";
+// const skill3 = "react";
+// const skill4 = "python";
+
+const skills = [
+  "html",
+  "css",
+  "js",
+  "react",
+  "python",
+  10,
+  true,
+  undefined,
+  null,
+  20n,
+  function () {
+    console.log("i am aniny in side the array");
+  },
+];
+
+// console.log(skills);
+// console.log(skills[0]);
+
+// console.log(skills[10]);
+
+// skills[10]();
+
+console.log(skills[0]);
+console.log(skills[1]);
+console.log(skills[2]);
+console.log(skills[3]);
+console.log(skills[4]);
+console.log(skills[5]);
+
+// looping
+for (let i = 0; i < 6; i++) {
+  console.log(skills[i]);
 }
