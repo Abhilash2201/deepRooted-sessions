@@ -573,10 +573,10 @@ function demo() {
 // the value can be accessed based on index value
 // the index value starts from 0 to n-1 (n=length of the array)
 
-const stdName = "anujna";
-const stdqulification = "BE";
-const courseEnrolled = "Mern";
-const phone = 1234567890;
+// const stdName = "anujna";
+// const stdqulification = "BE";
+// const courseEnrolled = "Mern";
+// const phone = 1234567890;
 
 // const skill = "html";
 // const skill1 = "css";
@@ -584,21 +584,21 @@ const phone = 1234567890;
 // const skill3 = "react";
 // const skill4 = "python";
 
-const skills = [
-  "html",
-  "css",
-  "js",
-  "react",
-  "python",
-  10,
-  true,
-  undefined,
-  null,
-  20n,
-  function () {
-    console.log("i am aniny in side the array");
-  },
-];
+// const skills = [
+//   "html",
+//   "css",
+//   "js",
+//   "react",
+//   "python",
+//   10,
+//   true,
+//   undefined,
+//   null,
+//   20n,
+//   function () {
+//     console.log("i am aniny in side the array");
+//   },
+// ];
 
 // console.log(skills);
 // console.log(skills[0]);
@@ -607,14 +607,65 @@ const skills = [
 
 // skills[10]();
 
-console.log(skills[0]);
-console.log(skills[1]);
-console.log(skills[2]);
-console.log(skills[3]);
-console.log(skills[4]);
-console.log(skills[5]);
+// console.log(skills[0]);
+// console.log(skills[1]);
+// console.log(skills[2]);
+// console.log(skills[3]);
+// console.log(skills[4]);
+// console.log(skills[5]);
 
-// looping
-for (let i = 0; i < 6; i++) {
-  console.log(skills[i]);
+// // looping
+// for (let i = 0; i < 6; i++) {
+//   console.log(skills[i]);
+// }
+
+// let skills;
+// skills = [];
+// // skills[0] = "html";
+// skills.push("html");
+// skills.push("css");
+// skills.push(100);
+
+// console.log(skills);
+
+// function
+// method
+
+// let skills = ["html", "css", "js"];
+// console.log(skills);
+// skills.pop();
+// skills.pop();
+// console.log(skills);
+
+// let skills = ["react", "nodejs"];
+// skills.unshift("js");
+// console.log(skills);
+
+// let skills = ["html", "css", "js"];
+// console.log(skills);
+// skills.shift();
+// console.log(skills);
+
+let skills1 = ["html", "css", "js"];
+console.log(typeof skills1);
+
+console.log(skills1.length);
+
+console.log(skills1.concat(["react", "nodejs"]));
+console.log(skills1.concat(["react", "nodejs", "mongodb"]));
+
+console.log(skills1);
+
+function myConcat(first, second) {
+  if (typeof first === "string" && typeof second === "string") {
+    return first + second;
+  } else if (Array.isArray(first) && Array.isArray(second)) {
+    let resultLen = first.length + second.length - 2;
+    let ans=first
+    for (let i = second.length; i < resultLen; i++) {
+      ans[i]=
+    }
+  }
 }
+
+console.log(myConcat(skills1, ["react", "nodejs"]));
