@@ -646,26 +646,92 @@ function demo() {
 // skills.shift();
 // console.log(skills);
 
-let skills1 = ["html", "css", "js"];
-console.log(typeof skills1);
+// let skills1 = ["html", "css", "js"];
+// console.log(typeof skills1);
 
-console.log(skills1.length);
+// console.log(skills1.length);
 
-console.log(skills1.concat(["react", "nodejs"]));
-console.log(skills1.concat(["react", "nodejs", "mongodb"]));
+// console.log(skills1.concat(["react", "nodejs"]));
+// console.log(skills1.concat(["react", "nodejs", "mongodb"]));
 
-console.log(skills1);
+// console.log(skills1);
 
-function myConcat(first, second) {
-  if (typeof first === "string" && typeof second === "string") {
-    return first + second;
-  } else if (Array.isArray(first) && Array.isArray(second)) {
-    let resultLen = first.length + second.length - 2;
-    let ans=first
-    for (let i = second.length; i < resultLen; i++) {
-      ans[i]=
-    }
-  }
-}
+// function myConcat(first, second) {
+//   if (typeof first === "string" && typeof second === "string") {
+//     return first + second;
+//   } else if (Array.isArray(first) && Array.isArray(second)) {
+//     let resultLen = first.length + second.length - 2;
+//     let ans = first;
+//   }
+// }
+// console.log(myConcat(skills1, ["react", "nodejs"]));
 
-console.log(myConcat(skills1, ["react", "nodejs"]));
+// let skills1 = ["html", "css", "js", "react", "css"];
+// console.log(skills1);
+
+// const ans = skills1.find((ele, index, arr) => {
+//   return ele === "html1";
+// });
+
+// const ans = skills1.findIndex((ele, index, arr) => {
+//   return ele === "css";
+// });
+
+// const ans = skills1.findLastIndex((ele, index, arr) => {
+//   return ele === "css";
+// });
+
+// const ans = skills1.findLastIndex((ele, index, arr) => {
+//   return ele === "html1";
+// });
+
+// const ans = skills1.reverse();
+
+// const ans = skills1.toReversed();
+
+// const ans = skills1.sort();
+// const ans = skills1.toSorted();
+
+// const ans = skills1.sort().reverse();
+// const ans1 = skills1.sort();
+// console.log(skills1);
+
+// const ans1 = skills1.toSpliced(2, 0, "nodejs");
+// start index, delete count, add elements
+
+// // slice fetch
+
+// // splice remove
+// // splice add
+// // splice update
+
+// const ans1 = skills1.slice(1, 3);
+
+// const ans1 = skills1.at(1);
+
+// let skills1 = ["html", "css", "js", "react", "css"];
+let skills1 = [
+  "html",
+  "css",
+  ["variable", ["PDT", "NPDT", ["Number", "NPDT"]]],
+  "react",
+  "css",
+];
+
+// const ans1 = skills1.copyWithin(2, 0, 2);
+
+// const ans1 = skills1.includes("js");
+// const ans1 = skills1.toString();
+// const ans1 = skills1.fill(5);
+// const ans1 = skills1.flat(Infinity);
+const ans1 = skills1.flat(1);
+
+console.log(skills1[2]);
+console.log(skills1[2][1]);
+console.log(skills1[2][1][2]);
+console.log(skills1[2][1][2][0]);
+
+// console.log(skills1[1]);
+console.log(ans1);
+
+// foreach,Map,filter,reduce,every,some
