@@ -708,15 +708,15 @@ function demo() {
 // const ans1 = skills1.slice(1, 3);
 
 // const ans1 = skills1.at(1);
-
-// let skills1 = ["html", "css", "js", "react", "css"];
-let skills1 = [
-  "html",
-  "css",
-  ["variable", ["PDT", "NPDT", ["Number", "NPDT"]]],
-  "react",
-  "css",
-];
+// cre, css ,horse ,hospital
+// let skills1 = ["hospital", "css", "js", "react", "cre", "horse"];
+// let skills1 = [
+//   "html",
+//   "css",
+//   ["variable", ["PDT", "NPDT", ["Number", "NPDT"]]],
+//   "react",
+//   "css",
+// ];
 
 // const ans1 = skills1.copyWithin(2, 0, 2);
 
@@ -724,14 +724,45 @@ let skills1 = [
 // const ans1 = skills1.toString();
 // const ans1 = skills1.fill(5);
 // const ans1 = skills1.flat(Infinity);
-const ans1 = skills1.flat(1);
 
-console.log(skills1[2]);
-console.log(skills1[2][1]);
-console.log(skills1[2][1][2]);
-console.log(skills1[2][1][2][0]);
+// const ans1 = skills1.flat(1);
+
+// console.log(skills1[2]);
+// console.log(skills1[2][1]);
+// console.log(skills1[2][1][2]);
+// console.log(skills1[2][1][2][0]);
 
 // console.log(skills1[1]);
-console.log(ans1);
+// console.log(ans1);
+
+// let marks = [45, 67, 89, 23, 123, 12, 90, 233];
+// const ans = marks.toSorted((a, b) => {
+//   return b - a;
+// });
+// console.log(ans);
 
 // foreach,Map,filter,reduce,every,some
+// maxmarks=300 min=105
+// client > ba >architect> software>
+// did EVERY student scorde above 200 ===> no false
+// did any student scorde above 200 ===> no false
+
+// let marks = [205, 100, 289, 103, 123, 120, 90, 233, 170];
+// let above200 = false;
+
+// for (let anujna = 0; anujna < marks.length; anujna++) {
+//   if (marks[anujna] >= 200) {
+//     above200 = true;
+//     // return;
+//     break;
+//   }
+// }
+// // console.log(above200);
+
+// const ansEvery = marks.every((ele) => ele > 200);
+// // return true only if all the elements satisfy thegiven condition
+// // return false if any one element not satisfy the given condition
+// const ansSome = marks.some((ele) => ele > 200);
+// // return true only if any one  elements satisfy the condition
+// console.log(ansEvery);
+// console.log(ansSome);
