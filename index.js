@@ -766,3 +766,57 @@ function demo() {
 // // return true only if any one  elements satisfy the condition
 // console.log(ansEvery);
 // console.log(ansSome);
+
+// let marks = [205, 100, 289, 103, 123, 120, 90, 233, 170, 287];
+
+// marks.forEach((ele, index, arr) => {
+//   console.log(ele);
+//   console.log(index);
+//   console.log(arr);
+// });
+// const ans = marks.forEach((ele, index, arr) => {
+//   // console.log("the student with 0 roll Id has scored the marks 240");
+//   console.log(
+//     `the student with roll Id of ${index + 1} has scored the marks ${ele}`
+//   );
+// });
+
+// console.log(ans);
+
+let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
+
+// he need distubute the money based on age
+// above 18 //done
+// 60+1000 //
+// 18-60 500 //
+// tptal money distubuted
+// avg cost on elogible voters
+// avg cost on no of people
+
+const eligileVoters = age.filter((ele, index, arr) => ele >= 18);
+// console.log(eligileVoters);
+// console.log(eligileVoters.length);
+
+const moneyDistubutedBasedOnAge = eligileVoters.map((ele, index, arr) => {
+  if (ele >= 60) {
+    return 1000;
+  } else {
+    return 500;
+  }
+});
+console.log(moneyDistubutedBasedOnAge);
+// const initialMoney = 1000;
+
+const totalMoneyDistubuted = moneyDistubutedBasedOnAge.reduce(
+  (acc, ele, idx, arr) => {
+    return acc + ele;
+  },
+  1000
+);
+
+console.log(totalMoneyDistubuted);
+const avgCostOnEligileVoters = totalMoneyDistubuted / eligileVoters.length;
+console.log(avgCostOnEligileVoters);
+
+const avgCostOnTotalPeople = totalMoneyDistubuted / age.length;
+console.log(avgCostOnTotalPeople);
