@@ -793,30 +793,169 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // avg cost on elogible voters
 // avg cost on no of people
 
-const eligileVoters = age.filter((ele, index, arr) => ele >= 18);
-// console.log(eligileVoters);
-// console.log(eligileVoters.length);
+// const eligileVoters = age.filter((ele, index, arr) => ele >= 18);
+// // console.log(eligileVoters);
+// // console.log(eligileVoters.length);
 
-const moneyDistubutedBasedOnAge = eligileVoters.map((ele, index, arr) => {
-  if (ele >= 60) {
-    return 1000;
-  } else {
-    return 500;
-  }
-});
-console.log(moneyDistubutedBasedOnAge);
-// const initialMoney = 1000;
+// const moneyDistubutedBasedOnAge = eligileVoters.map((ele, index, arr) => {
+//   if (ele >= 60) {
+//     return 1000;
+//   } else {
+//     return 500;
+//   }
+// });
+// console.log(moneyDistubutedBasedOnAge);
+// // const initialMoney = 1000;
 
-const totalMoneyDistubuted = moneyDistubutedBasedOnAge.reduce(
-  (acc, ele, idx, arr) => {
-    return acc + ele;
-  },
-  1000
-);
+// const totalMoneyDistubuted = moneyDistubutedBasedOnAge.reduce(
+//   (acc, ele, idx, arr) => {
+//     return acc + ele;
+//   },
+//   1000
+// );
 
-console.log(totalMoneyDistubuted);
-const avgCostOnEligileVoters = totalMoneyDistubuted / eligileVoters.length;
-console.log(avgCostOnEligileVoters);
+// console.log(totalMoneyDistubuted);
+// const avgCostOnEligileVoters = totalMoneyDistubuted / eligileVoters.length;
+// console.log(avgCostOnEligileVoters);
 
-const avgCostOnTotalPeople = totalMoneyDistubuted / age.length;
-console.log(avgCostOnTotalPeople);
+// const avgCostOnTotalPeople = totalMoneyDistubuted / age.length;
+// console.log(avgCostOnTotalPeople);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const ans = arr.join("-");
+// console.log(ans);
+
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray(10));
+
+// console.log(typeof "100");
+// console.log(typeof 100);
+// console.log(typeof null);
+
+// object
+// real world entity which have state and behavior
+
+// it is a collection of key value pairs which is used to store the related data in a single variable name
+// it is used to represent real world entities
+// key should be unique
+// key is always string datatype
+// value can be of any datatype
+// value can be accessed based on key name
+
+// math object
+// date object
+
+// const std1 = {
+//   name: "anujna",
+//   course: "mern,python",
+//   clg: "East west",
+//   skills: ["html", "css", "js", "react"],
+//   inDeeproot: function () {
+//     console.log("as a student");
+//   },
+//   10: "ten",
+// };
+// console.log(std1);
+// console.log(std1.name);
+// console.log(std1[10]);
+
+// dot notation
+// bracket notation
+// console.log(std1.name);
+// console.log(std1["name"]);
+
+// const arr = ["anujna", "mern", "east west"];
+
+// const std = [
+//   {
+//     name: "anujna",
+//     course: "mern,python",
+//     clg: "East west",
+//     skills: ["html", "css", "js", "react"],
+//   },
+//   {
+//     name: "raj",
+//     course: "mern,python",
+//     clg: "ramaiah",
+//     skills: ["html", "css", "js", "react"],
+//   },
+// ];
+
+// console.log(arr[0]);
+
+// const std1 = {
+//   name: "anujna",
+//   course: "mern,python",
+//   clg: "East west",
+//   skills: ["html", "css", "js", "react"],
+//   inDeeproot: function () {
+//     console.log("as a student");
+//     // return "as a student";
+//   },
+//   10: "ten",
+//   "100%": "hundred",
+//   frn: "anusha",
+//   "()": "bracket",
+// };
+// std1.inDeeproot();
+// console.log(std1.frn);
+// console.log(std1["()"]);
+
+// type of object creation
+
+// const std2 = {};
+// std2.name = "Abhilash";
+// std2.name = "Abhilsh L";
+
+// console.log(std2);
+
+// const std2 = new Object(); //{}
+// const arr = new Array(); //[]
+// const string = new String(); //"",'',``
+// const bool = new Boolean(); //false
+// const bigInt = new BigInt(); //111n
+// const symbol = new Symbol(); //unique
+// // new keyword Contructor function
+
+// const std2 = new Object();
+// std2.name = "Raj";
+// console.log(std2);
+
+// const std1 = {
+//   name: "anujna",
+//   course: "mern,python",
+//   clg: "East west",
+//   skills: ["html", "css", "js", "react"],
+//   inDeeproot: function () {
+//     console.log("as a student");
+//     // return "as a student";
+//   },
+//   10: "ten",
+//   "100%": "hundred",
+//   frn: "anusha",
+//   "()": "bracket",
+// };
+// std1.friend = "Devaki";
+// delete std1[10]; //delete the properties of the array
+// console.log(std1);
+
+// console.log(Object.keys(std1));
+// console.log(Object.values(std1));
+// console.log(Object.entries(std1));
+
+const bankAccount = {
+  balance: "100M",
+  name: "raj",
+};
+bankAccount.address = "rajajinagar";
+
+console.log(bankAccount);
+Object.freeze(bankAccount);
+
+console.log(Object.isFrozen(bankAccount));
+
+delete bankAccount.name;
+bankAccount.manager = "Anujna";
+
+console.log(bankAccount);
