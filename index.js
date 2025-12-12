@@ -944,18 +944,89 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // console.log(Object.values(std1));
 // console.log(Object.entries(std1));
 
-const bankAccount = {
-  balance: "100M",
-  name: "raj",
-};
-bankAccount.address = "rajajinagar";
+// const bankAccount = {
+//   balance: "100M",
+//   name: "raj",
+// };
+// bankAccount.address = "rajajinagar";
 
-console.log(bankAccount);
-Object.freeze(bankAccount);
+// console.log(bankAccount);
+// Object.freeze(bankAccount);
 
-console.log(Object.isFrozen(bankAccount));
+// console.log(Object.isFrozen(bankAccount));
 
-delete bankAccount.name;
-bankAccount.manager = "Anujna";
+// delete bankAccount.name;
+// bankAccount.manager = "Anujna";
 
-console.log(bankAccount);
+// console.log(bankAccount);
+
+// const bankAccount = {
+//   balance: "100M",
+//   name: "raj",
+// };
+// bankAccount.address = "rajajinagar";
+
+// console.log(bankAccount);
+
+// Object.seal(bankAccount);
+
+// console.log(Object.isSealed(bankAccount));
+// bankAccount.balance = "500m";
+
+// delete bankAccount.name;
+// bankAccount.manager = "Anujna";
+
+// console.log(bankAccount);
+
+// const myDate = new Date();
+// console.log(myDate);
+// console.log("today date is " + myDate);
+// object name.[]key name
+// const myDate = new Date();
+
+// const date = myDate.getDate();
+// const month = myDate.getMonth();
+// console.log(myDate.getDay());0-sunday
+
+// const year = myDate.getFullYear();
+// const hrs = myDate.getHours();
+
+// const min = myDate.getMinutes();
+// const sec = myDate.getSeconds();
+// const msecs = myDate.getMilliseconds();
+// console.log(myDate.getUTCHours());
+// console.log(myDate.getUTCMinutes());
+// console.log("----");
+
+// console.log(date);
+// console.log(month); //0-jan 11-dec
+// console.log(year);
+// console.log(hrs);
+// console.log(min);
+// console.log(sec);
+// console.log(msecs);
+
+// math
+
+// const myDate = new Date(2026, 0, 1, 12, 12, 12, 12);
+// const myDate = new Date();
+
+// myDate.setFullYear(2027);
+// console.log(myDate);
+
+// console.log(Math.E);
+// console.log(Math.PI * (2 * 2));
+// console.log(Math.SQRT2);
+// console.log(Math.abs(-10));
+// console.log(Math.sin(0));
+// console.log(Math.cos(0));
+// console.log(Math.tan(0));
+// console.log(Math.ceil(3.02));
+// console.log(Math.floor(3.2));
+// console.log(Math.round(3.7));
+// console.log(Math.sqrt(4));
+// console.log(Math.sqrt(16));
+// console.log(Math.cbrt(27));
+// console.log(Math.random());
+// console.log(Math.min(12, 78, 45, 34, 98));
+// console.log(Math.max(12, 78, 45, 34, 98));
