@@ -1030,3 +1030,34 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // console.log(Math.random());
 // console.log(Math.min(12, 78, 45, 34, 98));
 // console.log(Math.max(12, 78, 45, 34, 98));
+
+console.log(document);
+console.log(document.head);
+console.log(document.body);
+// document.body.style.background = "red";
+// const foundParent = document.getElementById("parent");
+// console.log(foundParent);
+// foundParent.style.background = "green";
+
+// const foundParent = document.getElementsByTagName("p");
+// console.log(foundParent);
+// console.log((foundParent[0].style.background = "red"));
+// console.log((foundParent[2].style.background = "green"));
+
+// const foundParent = document.getElementsByClassName("child");
+// console.log(foundParent);
+
+// const foundParent = document.querySelector(".child");
+// const foundParent = document.querySelector("#parent");
+// const foundParent = document.querySelector("p");
+// const foundParent = document.querySelector("#parent .child");
+// const foundParent = document.querySelectorAll("#parent .child");
+
+// console.log(foundParent[0]);
+// for (let i = 0; i < foundParent.length; i++) {
+//   if (i % 2 === 0) {
+//     foundParent[i].style.background = "red";
+//   } else {
+//     foundParent[i].style.background = "green";
+//   }
+// }
