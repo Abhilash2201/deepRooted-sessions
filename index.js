@@ -1031,9 +1031,9 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // console.log(Math.min(12, 78, 45, 34, 98));
 // console.log(Math.max(12, 78, 45, 34, 98));
 
-console.log(document);
-console.log(document.head);
-console.log(document.body);
+// console.log(document);
+// console.log(document.head);
+// console.log(document.body);
 // document.body.style.background = "red";
 // const foundParent = document.getElementById("parent");
 // console.log(foundParent);
@@ -1061,3 +1061,94 @@ console.log(document.body);
 //     foundParent[i].style.background = "green";
 //   }
 // }
+
+// tag//html collection
+// class//html collectio
+// id//one element
+// query selector//one elemnet
+// query selectorAll //
+
+const ele = document.querySelector(".anujna");
+// console.log(ele);
+// // ele.innerText = "hi";
+
+// ele.style.background = "red";
+
+// const h1FromJs = document.createElement("h1");
+// h1FromJs.innerText = "H1 FROM JS";
+
+// const h2FromJs = document.createElement("h1");
+// h2FromJs.innerText = "H2 FROM JS";
+
+// ele.append(h1FromJs, h2FromJs);
+// ele.appendChild(h1FromJs);
+// ele.appendChild(h2FromJs);
+
+const tableFromJs = document.createElement("table");
+const tr1FromJs = document.createElement("tr");
+const tr2FromJs = document.createElement("tr");
+const tr3FromJs = document.createElement("tr");
+const tr4FromJs = document.createElement("tr");
+const tr5FromJs = document.createElement("tr");
+
+const td1FromJs = document.createElement("td");
+const td2FromJs = document.createElement("td");
+const td3FromJs = document.createElement("td");
+const td4FromJs = document.createElement("td");
+const td5FromJs = document.createElement("td");
+
+td1FromJs.innerText = 1;
+td2FromJs.innerText = 2;
+td3FromJs.innerText = 3;
+td4FromJs.innerText = 4;
+td5FromJs.innerText = 5;
+
+console.log(td1FromJs);
+console.log(tr1FromJs);
+console.log(tableFromJs);
+
+// tableFromJs.appendChild(tr1FromJs);
+// tableFromJs.appendChild(tr2FromJs);
+// tableFromJs.appendChild(tr3FromJs);
+// tableFromJs.appendChild(tr4FromJs);
+// tableFromJs.appendChild(tr5FromJs);
+tableFromJs.append(tr1FromJs, tr2FromJs, tr3FromJs, tr4FromJs, tr5FromJs);
+
+tr1FromJs.appendChild(td1FromJs);
+tr1FromJs.appendChild(td2FromJs);
+tr1FromJs.appendChild(td3FromJs);
+tr1FromJs.appendChild(td4FromJs);
+tr1FromJs.appendChild(td5FromJs);
+
+console.log(tableFromJs);
+ele.appendChild(tableFromJs);
+
+// 8*8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+// 1,2,3,4,5,6,7,8
+
+// 5*5
+// 5,4,3,2,1
+// 5,4,3,2,1
+// 5,4,3,2,1
+// 5,4,3,2,1
+// 5,4,3,2,1
+
+// 5*5
+// 1,1,1,1,1
+// 2,2,2,2,2
+// 3,3,3,3,3
+// 4,4,4,4,4
+// 5,5,5,5,5
+
+// 5*5
+// 5,5,5,5,5
+// 4,4,4,4,4
+// 3,3,3,3,3
+// 2,2,2,2,2
+// 1,1,1,1,1
