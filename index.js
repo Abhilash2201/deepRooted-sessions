@@ -1068,7 +1068,7 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // query selector//one elemnet
 // query selectorAll //
 
-const ele = document.querySelector(".anujna");
+// const ele = document.querySelector(".anujna");
 // console.log(ele);
 // // ele.innerText = "hi";
 
@@ -1084,44 +1084,44 @@ const ele = document.querySelector(".anujna");
 // ele.appendChild(h1FromJs);
 // ele.appendChild(h2FromJs);
 
-const tableFromJs = document.createElement("table");
-const tr1FromJs = document.createElement("tr");
-const tr2FromJs = document.createElement("tr");
-const tr3FromJs = document.createElement("tr");
-const tr4FromJs = document.createElement("tr");
-const tr5FromJs = document.createElement("tr");
+// const tableFromJs = document.createElement("table");
+// const tr1FromJs = document.createElement("tr");
+// const tr2FromJs = document.createElement("tr");
+// const tr3FromJs = document.createElement("tr");
+// const tr4FromJs = document.createElement("tr");
+// const tr5FromJs = document.createElement("tr");
 
-const td1FromJs = document.createElement("td");
-const td2FromJs = document.createElement("td");
-const td3FromJs = document.createElement("td");
-const td4FromJs = document.createElement("td");
-const td5FromJs = document.createElement("td");
+// const td1FromJs = document.createElement("td");
+// const td2FromJs = document.createElement("td");
+// const td3FromJs = document.createElement("td");
+// const td4FromJs = document.createElement("td");
+// const td5FromJs = document.createElement("td");
 
-td1FromJs.innerText = 1;
-td2FromJs.innerText = 2;
-td3FromJs.innerText = 3;
-td4FromJs.innerText = 4;
-td5FromJs.innerText = 5;
+// td1FromJs.innerText = 1;
+// td2FromJs.innerText = 2;
+// td3FromJs.innerText = 3;
+// td4FromJs.innerText = 4;
+// td5FromJs.innerText = 5;
 
-console.log(td1FromJs);
-console.log(tr1FromJs);
-console.log(tableFromJs);
+// console.log(td1FromJs);
+// console.log(tr1FromJs);
+// console.log(tableFromJs);
 
 // tableFromJs.appendChild(tr1FromJs);
 // tableFromJs.appendChild(tr2FromJs);
 // tableFromJs.appendChild(tr3FromJs);
 // tableFromJs.appendChild(tr4FromJs);
 // tableFromJs.appendChild(tr5FromJs);
-tableFromJs.append(tr1FromJs, tr2FromJs, tr3FromJs, tr4FromJs, tr5FromJs);
+// tableFromJs.append(tr1FromJs, tr2FromJs, tr3FromJs, tr4FromJs, tr5FromJs);
 
-tr1FromJs.appendChild(td1FromJs);
-tr1FromJs.appendChild(td2FromJs);
-tr1FromJs.appendChild(td3FromJs);
-tr1FromJs.appendChild(td4FromJs);
-tr1FromJs.appendChild(td5FromJs);
+// tr1FromJs.appendChild(td1FromJs);
+// tr1FromJs.appendChild(td2FromJs);
+// tr1FromJs.appendChild(td3FromJs);
+// tr1FromJs.appendChild(td4FromJs);
+// tr1FromJs.appendChild(td5FromJs);
 
-console.log(tableFromJs);
-ele.appendChild(tableFromJs);
+// console.log(tableFromJs);
+// ele.appendChild(tableFromJs);
 
 // 8*8
 // 1,2,3,4,5,6,7,8
@@ -1152,3 +1152,75 @@ ele.appendChild(tableFromJs);
 // 3,3,3,3,3
 // 2,2,2,2,2
 // 1,1,1,1,1
+
+// const jsDiv = document.createElement("div");
+// jsDiv.innerText = "hi";
+// jsDiv.innerHTML = ` <table>
+//         <tr>
+//           <td>data1</td>
+//           <td>data2</td>
+//           <td>data3</td>
+//         </tr>
+//         <tr>
+//           <td>data1</td>
+//           <td>data2</td>
+//           <td>data3</td>
+//         </tr>
+//         <tr>
+//           <td>data1</td>
+//           <td>data2</td>
+//           <td>data3</td>
+//         </tr>
+//       </table>`;
+
+// document.body.append(jsDiv);
+
+// attching events
+
+// document.body.style.background = "red";
+
+const jsBtn = document.querySelector("button");
+const clickFnc = () => {
+  // console.log("i was clicked");
+  if (document.body.style.background === "red") {
+    document.body.style.background = "none";
+  } else {
+    document.body.style.background = "red";
+    console.log(document.body.style.background);
+  }
+  // document.body.style.background === "red" ? "none" : "red";
+  // console.log(document.body.style);
+
+  // if (10 > 2) {
+  //   console.log("true");
+  // } else {
+  //   console.log("false");
+  // }
+
+  // const ans = 10 > 2 ? "true" : "false";
+  // ternary operator
+  // console.log(ans);
+};
+
+jsBtn.addEventListener("click", clickFnc);
+function genarateOtp() {
+  const ans = Math.random();
+  // 0.01 - 0.99;
+  // 0.1 - 0.99;
+  // console.log(ans);
+  // 0.0656797
+  const otp = Math.round(ans * 10000);
+  alert("ur one time password is" + otp);
+
+  const ansOtp = prompt("enter the OTP");
+  if (otp === parseInt(ansOtp)) {
+    console.log("otp validation succcessful");
+    alert("u will be redirected to the external website");
+    window.open("https://pixabay.com/");
+  } else {
+    console.log("authentocatin error");
+  }
+}
+
+const otpBtn = document.querySelector("#otp");
+otpBtn.addEventListener("click", genarateOtp);
