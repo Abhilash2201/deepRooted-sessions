@@ -1179,48 +1179,141 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 
 // document.body.style.background = "red";
 
-const jsBtn = document.querySelector("button");
-const clickFnc = () => {
-  // console.log("i was clicked");
-  if (document.body.style.background === "red") {
-    document.body.style.background = "none";
-  } else {
-    document.body.style.background = "red";
-    console.log(document.body.style.background);
+// const jsBtn = document.querySelector("button");
+// const clickFnc = () => {
+//   // console.log("i was clicked");
+//   if (document.body.style.background === "red") {
+//     document.body.style.background = "none";
+//   } else {
+//     document.body.style.background = "red";
+//     console.log(document.body.style.background);
+//   }
+//   // document.body.style.background === "red" ? "none" : "red";
+//   // console.log(document.body.style);
+
+//   // if (10 > 2) {
+//   //   console.log("true");
+//   // } else {
+//   //   console.log("false");
+//   // }
+
+//   // const ans = 10 > 2 ? "true" : "false";
+//   // ternary operator
+//   // console.log(ans);
+// };
+
+// jsBtn.addEventListener("click", clickFnc);
+// function genarateOtp() {
+//   const ans = Math.random();
+//   // 0.01 - 0.99;
+//   // 0.1 - 0.99;
+//   // console.log(ans);
+//   // 0.0656797
+//   const otp = Math.round(ans * 10000);
+//   alert("ur one time password is" + otp);
+
+//   const ansOtp = prompt("enter the OTP");
+//   if (otp === parseInt(ansOtp)) {
+//     console.log("otp validation succcessful");
+//     alert("u will be redirected to the external website");
+//     window.open("https://pixabay.com/");
+//   } else {
+//     console.log("authentocatin error");
+//   }
+// }
+
+// const otpBtn = document.querySelector("#otp");
+// otpBtn.addEventListener("click", genarateOtp);
+
+// 8 * 8;
+// 1 - 8;
+
+// const container = document.querySelector(".container");
+// const tab = document.createElement("table");
+// tab.style.border = "1px solid";
+// container.append(tab);
+
+// 8 time tr
+// 64 time td
+// 64 times innertext
+// 8 time append for td
+// 1-8
+// 2-8
+
+// for (let i = 1; i < 9; i++) {
+//   const tr = document.createElement("tr");
+//   for (let j = 1; j < 9; j++) {
+//     const td = document.createElement("td");
+//     td.innerText = j;
+//     tr.appendChild(td);
+//   }
+//   tab.appendChild(tr);
+// }
+
+// for (let i = 8; i > 0; i--) {
+//   const tr = document.createElement("tr");
+//   for (let j = 8; j > 0; j--) {
+//     const td = document.createElement("td");
+//     td.innerText = j;
+//     tr.appendChild(td);
+//   }
+//   tab.appendChild(tr);
+// }
+
+// outer for---row
+// inner for---col
+
+// for (let i = 1; i < 9; i++) {
+//   const tr = document.createElement("tr");
+//   for (let j = 1; j < 9; j++) {
+//     const td = document.createElement("td");
+//     td.innerText = i;
+//     tr.appendChild(td);
+//   }
+//   tab.appendChild(tr);
+// }
+
+// n2
+// for (let i = 9; i > 0; i--) {
+//   const tr = document.createElement("tr");
+//   for (let j = 1; j < 9; j++) {
+//     const td = document.createElement("td");
+//     td.innerText = i;
+//     tr.appendChild(td);
+//   }
+//   tab.appendChild(tr);
+// }
+
+// 10 - 1;
+
+// 10;
+
+// 100;
+
+// 1000;
+
+// 1024;
+
+// 3628800;
+
+// console.log(Math.pow(2, 10));
+
+// console.log("ghj");
+
+// document.body.style.background = "red";
+
+function generateRandom() {
+  let ans = 0;
+  for (let i = 0; i < 6; i++) {
+    const num = parseInt(Math.random() * 10);
+    console.log(num);
+    console.log(ans);
+
+    ans = ans + num * 10;
   }
-  // document.body.style.background === "red" ? "none" : "red";
-  // console.log(document.body.style);
-
-  // if (10 > 2) {
-  //   console.log("true");
-  // } else {
-  //   console.log("false");
-  // }
-
-  // const ans = 10 > 2 ? "true" : "false";
-  // ternary operator
-  // console.log(ans);
-};
-
-jsBtn.addEventListener("click", clickFnc);
-function genarateOtp() {
-  const ans = Math.random();
-  // 0.01 - 0.99;
-  // 0.1 - 0.99;
-  // console.log(ans);
-  // 0.0656797
-  const otp = Math.round(ans * 10000);
-  alert("ur one time password is" + otp);
-
-  const ansOtp = prompt("enter the OTP");
-  if (otp === parseInt(ansOtp)) {
-    console.log("otp validation succcessful");
-    alert("u will be redirected to the external website");
-    window.open("https://pixabay.com/");
-  } else {
-    console.log("authentocatin error");
-  }
+  return ans;
 }
+const jsBtn = document.querySelector("button");
 
-const otpBtn = document.querySelector("#otp");
-otpBtn.addEventListener("click", genarateOtp);
+document.body.style.background = "#123456";
+console.log(generateRandom());
