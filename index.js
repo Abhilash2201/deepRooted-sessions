@@ -1302,18 +1302,85 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 
 // document.body.style.background = "red";
 
-function generateRandom() {
+function generateRandom(range) {
   let ans = 0;
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < range; i++) {
     const num = parseInt(Math.random() * 10);
-    console.log(num);
-    console.log(ans);
-
-    ans = ans + num * 10;
+    ans = ans * 10 + num;
   }
   return ans;
 }
-const jsBtn = document.querySelector("button");
 
-document.body.style.background = "#123456";
-console.log(generateRandom());
+// const jsBtn = document.querySelector("button");
+// const otpBtn = document.querySelector("#otp");
+
+// otpBtn.addEventListener("click", () => {
+//   const otp = generateRandom(4);
+//   console.log(otp);
+// });
+
+// jsBtn.addEventListener("click", () => {
+//   document.body.style.background = `#${generateRandom(6)}`;
+// });
+
+// const inpt = document.querySelector("#number");
+// const btn = document.querySelector("#getInputs");
+// const evenMsg = document.querySelector("#evenMsg");
+
+// btn.addEventListener("click", () => {
+//   const ans = Number(inpt.value);
+//   if (ans % 2 === 0) {
+//     evenMsg.innerText = `${ans} is a even Number`;
+//     console.log(ans + "is a even number");
+//   } else {
+//     evenMsg.innerText = `${ans} is a odd Number`;
+
+//     console.log(ans + "is a odd number");
+//   }
+// });
+
+const btn = document.querySelector("#clickMe");
+// btn.addEventListener("click", () => {
+//   console.log("i was triggered");
+// });
+
+// btn.addEventListener("dblclick", () => {
+//   console.log("i was triggered");
+// });
+
+btn.addEventListener("mouseover", () => {
+  console.log("i was triggered");
+});
+
+window.document.body.addEventListener("keydown", () => {
+  console.log("key don");
+});
+
+window.document.body.addEventListener("keyup", () => {
+  console.log("key up");
+});
+
+window.addEventListener("online", () => {
+  console.log("i am online");
+});
+
+window.addEventListener("offline", () => {
+  console.log("i am offlne");
+});
+
+window.addEventListener("resize", () => {
+  console.log(window.innerWidth);
+  document.body.style.background = `#${generateRandom(6)}`;
+
+  console.log("i am resize");
+});
+
+const form = document.querySelector("form");
+
+form.addEventListener("reset", () => {
+  console.log("i am a reset");
+});
+
+form.addEventListener("submit", () => {
+  console.log("i am a submit");
+});
