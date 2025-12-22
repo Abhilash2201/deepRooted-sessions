@@ -1302,14 +1302,14 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 
 // document.body.style.background = "red";
 
-function generateRandom(range) {
-  let ans = 0;
-  for (let i = 0; i < range; i++) {
-    const num = parseInt(Math.random() * 10);
-    ans = ans * 10 + num;
-  }
-  return ans;
-}
+// function generateRandom(range) {
+//   let ans = 0;
+//   for (let i = 0; i < range; i++) {
+//     const num = parseInt(Math.random() * 10);
+//     ans = ans * 10 + num;
+//   }
+//   return ans;
+// }
 
 // const jsBtn = document.querySelector("button");
 // const otpBtn = document.querySelector("#otp");
@@ -1339,7 +1339,7 @@ function generateRandom(range) {
 //   }
 // });
 
-const btn = document.querySelector("#clickMe");
+// const btn = document.querySelector("#clickMe");
 // btn.addEventListener("click", () => {
 //   console.log("i was triggered");
 // });
@@ -1348,39 +1348,57 @@ const btn = document.querySelector("#clickMe");
 //   console.log("i was triggered");
 // });
 
-btn.addEventListener("mouseover", () => {
-  console.log("i was triggered");
-});
+// btn.addEventListener("mouseover", () => {
+//   console.log("i was triggered");
+// });
 
-window.document.body.addEventListener("keydown", () => {
-  console.log("key don");
-});
+// window.document.body.addEventListener("keydown", () => {
+//   console.log("key don");
+// });
 
-window.document.body.addEventListener("keyup", () => {
-  console.log("key up");
-});
+// window.document.body.addEventListener("keyup", () => {
+//   console.log("key up");
+// });
 
-window.addEventListener("online", () => {
-  console.log("i am online");
-});
+// window.addEventListener("online", () => {
+//   console.log("i am online");
+// });
 
-window.addEventListener("offline", () => {
-  console.log("i am offlne");
-});
+// window.addEventListener("offline", () => {
+//   console.log("i am offlne");
+// });
 
-window.addEventListener("resize", () => {
-  console.log(window.innerWidth);
-  document.body.style.background = `#${generateRandom(6)}`;
+// window.addEventListener("resize", () => {
+//   console.log(window.innerWidth);
+//   document.body.style.background = `#${generateRandom(6)}`;
 
-  console.log("i am resize");
-});
+//   console.log("i am resize");
+// });
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
-form.addEventListener("reset", () => {
-  console.log("i am a reset");
-});
+// form.addEventListener("reset", () => {
+//   console.log("i am a reset");
+// });
 
-form.addEventListener("submit", () => {
-  console.log("i am a submit");
+// form.addEventListener("submit", () => {
+//   console.log("i am a submit");
+// });
+
+const inp = document.querySelector("#name");
+const pMsg = document.querySelector("p");
+const submit = document.querySelector("input[type='submit']");
+console.log(submit);
+
+const isEven = (num) => num % 2 === 0;
+
+submit.addEventListener("click", (event) => {
+  let value = Number(inp.value);
+  if (isEven(value)) {
+    pMsg.innerText = "is a even num";
+  } else {
+    pMsg.innerText = "is a odd num";
+  }
+  event.preventDefault();
+  console.log(inp.value);
 });
