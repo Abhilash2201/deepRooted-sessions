@@ -1385,20 +1385,78 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 //   console.log("i am a submit");
 // });
 
-const inp = document.querySelector("#name");
-const pMsg = document.querySelector("p");
-const submit = document.querySelector("input[type='submit']");
-console.log(submit);
+// const inp = document.querySelector("#name");
+// const pMsg = document.querySelector("p");
+// const submit = document.querySelector("input[type='submit']");
+// console.log(submit);
 
-const isEven = (num) => num % 2 === 0;
+// submit.addEventListener("click", (event) => {
+//   let value = Number(inp.value);
+//   if (isEven(value)) {
+//     pMsg.innerText = "is a even num";
+//   } else {
+//     pMsg.innerText = "is a odd num";
+//   }
+//   event.preventDefault();
+//   console.log(inp.value);
+// });
 
-submit.addEventListener("click", (event) => {
-  let value = Number(inp.value);
-  if (isEven(value)) {
-    pMsg.innerText = "is a even num";
-  } else {
-    pMsg.innerText = "is a odd num";
-  }
-  event.preventDefault();
-  console.log(inp.value);
-});
+// event delegation
+// event propogation
+
+// BOM
+
+// Window;
+// Location;
+// Navigator;
+// Screen;
+// History
+
+const parent = document.querySelector("#parent");
+const child = document.querySelector("#child");
+const grandChild = document.querySelector("#grandChild");
+
+// Event propogation
+// nested elements--if they have  event listerners
+
+// addEventListener("event",EventListener,eventPropation)
+// addEventListener("click",cbFnc,boolean)
+
+// target(child) -> parent -> grandParent  --(Bubbling) (Default) false
+// target(child) <- parent <- grandParent  --(Capturing)
+
+parent.addEventListener(
+  "click",
+  (e) => {
+    console.log("parent is clicked");
+    parent.style.background = "red";
+    // e.stopPropagation();
+    console.log(e.currentTarget, "currentTARGET--Parent");
+    console.log(e.target, "TARGET--Parent");
+  },
+  true
+);
+
+child.addEventListener(
+  "click",
+  (e) => {
+    console.log("child is clicked");
+    child.style.background = "green";
+    // e.stopPropagation();
+    console.log(e.currentTarget, "currentTARGET--Child");
+    console.log(e.target, "TARGET--Child");
+  },
+  true
+);
+
+grandChild.addEventListener(
+  "click",
+  (e) => {
+    console.log("grandChild is clicked");
+    grandChild.style.background = "yellow";
+    // e.stopPropagation();
+    console.log(e.currentTarget, "currentTARGET--GRAND CHILD");
+    console.log(e.target, "TARGET--GRAND CHILD");
+  },
+  true
+);
