@@ -1404,17 +1404,9 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // event delegation
 // event propogation
 
-// BOM
-
-// Window;
-// Location;
-// Navigator;
-// Screen;
-// History
-
-const parent = document.querySelector("#parent");
-const child = document.querySelector("#child");
-const grandChild = document.querySelector("#grandChild");
+// const parent = document.querySelector("#parent");
+// const child = document.querySelector("#child");
+// const grandChild = document.querySelector("#grandChild");
 
 // Event propogation
 // nested elements--if they have  event listerners
@@ -1425,38 +1417,103 @@ const grandChild = document.querySelector("#grandChild");
 // target(child) -> parent -> grandParent  --(Bubbling) (Default) false
 // target(child) <- parent <- grandParent  --(Capturing)
 
-parent.addEventListener(
-  "click",
-  (e) => {
-    console.log("parent is clicked");
-    parent.style.background = "red";
-    // e.stopPropagation();
-    console.log(e.currentTarget, "currentTARGET--Parent");
-    console.log(e.target, "TARGET--Parent");
-  },
-  true
-);
+// parent.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("parent is clicked");
+//     parent.style.background = "red";
+//     // e.stopPropagation();
+//     console.log(e.currentTarget, "currentTARGET--Parent");
+//     console.log(e.target, "TARGET--Parent");
+//   },
+//   true
+// );
 
-child.addEventListener(
-  "click",
-  (e) => {
-    console.log("child is clicked");
-    child.style.background = "green";
-    // e.stopPropagation();
-    console.log(e.currentTarget, "currentTARGET--Child");
-    console.log(e.target, "TARGET--Child");
-  },
-  true
-);
+// child.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("child is clicked");
+//     child.style.background = "green";
+//     // e.stopPropagation();
+//     console.log(e.currentTarget, "currentTARGET--Child");
+//     console.log(e.target, "TARGET--Child");
+//   },
+//   true
+// );
 
-grandChild.addEventListener(
-  "click",
-  (e) => {
-    console.log("grandChild is clicked");
-    grandChild.style.background = "yellow";
-    // e.stopPropagation();
-    console.log(e.currentTarget, "currentTARGET--GRAND CHILD");
-    console.log(e.target, "TARGET--GRAND CHILD");
-  },
-  true
-);
+// grandChild.addEventListener(
+//   "click",
+//   (e) => {
+//     console.log("grandChild is clicked");
+//     grandChild.style.background = "yellow";
+//     // e.stopPropagation();
+//     console.log(e.currentTarget, "currentTARGET--GRAND CHILD");
+//     console.log(e.target, "TARGET--GRAND CHILD");
+//   },
+//   true
+// );
+
+// BOM -browser object model
+
+// Window;//global object
+// Location;
+// Navigator;
+// Screen;
+// History
+
+// alert();
+// prompt()
+// confirm()
+// window.open()
+// window.close()
+
+// console.log(location);
+// console.log(navigator);
+
+// navigator.geolocation.getCurrentPosition((possition) => {
+//   console.log(possition);
+// });
+
+// console.log(screen);
+// console.log(history);
+
+// location.replace("https://www.w3schools.com/jsref/jsref_reduce.asp");
+// console.log(document);
+
+// sync vs async
+
+// function test() {
+//   console.log("i am a test will be executed every 100msec");
+// }
+// let intervalId;
+
+// function demo() {
+//   clearInterval(intervalId);
+//   console.log(" i am a demo");
+// }
+
+// // test(); //5min
+// // demo(); //5min
+
+// // console.log("hi");
+
+// intervalId = setInterval(test, 100);
+
+// const intervalId1 = setInterval(() => {
+//   console.log("hi");
+// }, 300);
+
+// setTimeout(demo, 3 * 1000);
+
+// setTimeout
+
+// console.log("one");
+
+// setTimeout(() => {
+//   console.log("two");
+// }, 0);
+
+// console.log("three");
+// console.log("four");
+
+// single threaded vs multi threaded ...javascrip,python,java
