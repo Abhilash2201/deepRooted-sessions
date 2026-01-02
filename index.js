@@ -1516,4 +1516,80 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // console.log("three");
 // console.log("four");
 
-// single threaded vs multi threaded ...javascrip,python,java
+// single threaded vs multi threaded ...javascript ,python, java
+
+// handle async operations using
+
+// 1.callback function
+// 2.promises
+// 3.async, await
+
+// //            request pending/accept/reject
+// sslc exam  -- result pass-fail
+
+// college enquiry
+// grand mother home
+// trip
+
+// browse
+// chat
+// buy
+
+// pass --> college admission -- seat allotment /rej
+// indentation program
+// clas start
+
+// msg
+// share my media
+// add into group
+
+// Promise
+// is a object which is used to handle the async operations in js
+
+// it has three states
+// 1.pending
+// 2.fulfilled/accepted
+// 3.rejected
+
+// pending,accept,reject
+
+// 1yrs =20--marriage proposal->engagement->marriage-honeymoon->
+
+// 1yrs =20--new girl/boy- marriage proposal->engagement->marriage-honeymoon->
+
+// 20yrs ---regular
+
+const studentResult = false;
+
+const myPromise = new Promise((resolve, reject) => {
+  if (studentResult) {
+    // resolve() --> state change from pending to fulfilled
+    resolve("congratulations you have passed the exam");
+  } else {
+    // resolve() --> state change from pending to rejected also throws the error message
+    reject("you have failed the exam");
+  }
+});
+
+// ERROR HANDLING
+
+try {
+  const a = 1;
+  a = 12;
+} catch (err) {
+  console.error(err, "some err msg");
+}
+// const a = 1;
+// a = 12;
+
+console.log(myPromise);
+console.log(1);
+console.log(2);
+// console.log(/);
+
+console.log(3);
+console.log(4);
+
+// gec
+// 1st phase  SyntaxError, variable declaration r
+// 2nd
