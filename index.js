@@ -1544,7 +1544,7 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 // add into group
 
 // Promise
-// is a object which is used to handle the async operations in js
+// is a object which is used to handle the async operations in js in a synchronous way by using the then and catch methods
 
 // it has three states
 // 1.pending
@@ -1559,37 +1559,101 @@ let age = [12, 3, 56, 36, 70, 50, 10, 13, 89, 23, 40];
 
 // 20yrs ---regular
 
-const studentResult = false;
+// const studentResult = true;
 
-const myPromise = new Promise((resolve, reject) => {
-  if (studentResult) {
-    // resolve() --> state change from pending to fulfilled
-    resolve("congratulations you have passed the exam");
-  } else {
-    // resolve() --> state change from pending to rejected also throws the error message
-    reject("you have failed the exam");
-  }
-});
+// const myPromise = new Promise((resolve, reject) => {
+//   if (studentResult) {
+//     // resolve() --> state change from pending to fulfilled
+
+//     setTimeout(() => {
+//       resolve("congratulations you have passed the exam");
+//     }, 2000);
+//   } else {
+//     // resolve() --> state change from pending to rejected also throws the error message
+//     reject("you have failed the exam");
+//   }
+// })
+//   .then((msg1) => {
+//     console.log(msg1);
+//     const msg2 = "you are eligible for college admission";
+//     return msg2;
+//   })
+//   .then((msg2) => {
+//     console.log(msg2);
+//   });
+// console.log(myPromise);
 
 // ERROR HANDLING
 
-try {
-  const a = 1;
-  a = 12;
-} catch (err) {
-  console.error(err, "some err msg");
-}
+// try {
+//   const a = 1;
+//   a = 12;
+// } catch (err) {
+//   console.error(err, "some err msg");
+// }
 // const a = 1;
 // a = 12;
 
-console.log(myPromise);
-console.log(1);
-console.log(2);
+// console.log(myPromise);
+// console.log(1);
+// console.log(2);
 // console.log(/);
 
-console.log(3);
-console.log(4);
+// console.log(3);
+// console.log(4);
 
 // gec
 // 1st phase  SyntaxError, variable declaration r
 // 2nd
+
+// let std = {
+//   name: "anujna",
+//   course: "mern",
+//   clg: "east west",
+// };
+// json vs XML vs html
+// json receiving from server
+// json sending to server
+// java--->React
+
+// const jsonFormat = JSON.stringify(std);
+// console.log(jsonFormat);
+// console.log(typeof jsonFormat);
+
+// const objFormat = JSON.parse(jsonFormat);
+// console.log(objFormat);
+
+// fetch--promise
+const tab = document.querySelector("table");
+
+fetch("https://api.github.com/users")
+  .then((response) => {
+    console.log(response);
+    console.log(response.body);
+    // const ans = JSON.parse(response.body);
+    // console.log(ans);
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    const trs = data.map((ele, index) => {
+      return `
+      <tr>
+        <td>${index + 1}</td>
+        <td>${ele.login}</td>
+        <td><a href="${ele.html_url}">git hub link</a></td>
+        <td><img src="${ele.avatar_url}" alt="" srcset="" height="30px" /></td>
+      </tr>`;
+    });
+    console.log(trs.join(","));
+    tab.innerHTML = trs;
+  });
+
+async function fetchData() {
+  const res = await fetch("https://api.github.com/users");
+  const data = await res.json();
+  console.log(data);
+}
+fetchData();
+
+// promise methods
